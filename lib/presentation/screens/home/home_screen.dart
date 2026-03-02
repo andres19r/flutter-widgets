@@ -40,7 +40,7 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        // TODO: navigate to other screens
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
